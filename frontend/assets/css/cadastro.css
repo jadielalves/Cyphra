@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+body{
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100dvh;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    width: 900px;
+    height: 500px;
+    display: flex;
+}
+
+#image{
+    background: url(../images/background.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 100%;
+
+    flex: 6;
+
+    color: white;
+}
+
+span{
+    background: linear-gradient(90deg, #FFD700, #FFC107);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+#form{
+    background-color: white;
+
+    flex: 5;
+    flex-direction: column;
+
+    width: 40%;
+    height: 100%;
+
+}
+
+#titulo{
+    text-align: center;
+}
+
+
+
