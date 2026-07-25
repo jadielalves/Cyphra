@@ -11,7 +11,7 @@ body{
 }
 
 #container{
-    width: 900px;
+    max-width: 900px;
     height: 500px;
     display: flex;
 }
@@ -26,7 +26,7 @@ body{
 
     flex: 6;
 
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 span{
@@ -53,5 +53,22 @@ span{
     text-align: center;
 }
 
+#subtitle{
+    margin-top: 15px;
+    opacity: 0.85;
+}
 
+.icons{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    
+    background-color: black;
+    width: 35px;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 10px rgba(255, 255, 2, 0.219);
+}
 
+.material-symbols-outlined{
+    font-size: 34px;
+}
