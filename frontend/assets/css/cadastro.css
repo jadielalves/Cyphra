@@ -8,13 +8,19 @@ body{
     min-height: 100dvh;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: default;
 }
+
+    /*
+    Cabeçalho, parte onde fica a logo e botão de ir para a página de login.
+    */
 
 header{
     background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     width: 814.183px;
     height: 60px;
     border-bottom: 1px solid rgb(46, 46, 46);
@@ -36,16 +42,35 @@ header img{
 }
 
 #login{
-    color: white;
+    color: rgba(255, 255, 255, 0.726);
     display: flex;
-    align-items: flex-end;
+    font-size: 15px;
+    margin-right: 20px;
 }
+
+#login a{
+    color: #FFD700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    /*
+    Fim do cabeçalho.
+    /*
+
+    /*
+    Container principal. Contém o lado esquerdo e o direito.
+    */
 
 #container{
     max-width: 900px;
     height: 550px;
     display: flex;
 }
+
+    /*
+    Lado esquerdo. Contém a imagem e as funcionalidades (escritas) do site.
+    */
 
 #image{
     
@@ -96,7 +121,7 @@ span{
     text-align: center;
 }
 
-
+    /*Icons do lado esquerdo.*/
 
 .icons{
     margin: 10px;
@@ -132,3 +157,5 @@ span{
     color: rgba(255, 255, 255, 0.726);
     font-size: 15px;
 }
+
+    /*Fim dos icons do lado esquerdo e do lado esquerdo.*/
