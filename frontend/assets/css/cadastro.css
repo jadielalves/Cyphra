@@ -8,7 +8,7 @@
     --cor-borda: #2A2A2A;
 
     --cor-texto: #FFFFFF;
-    --cor-texto-secundario: #8A8A8A;
+    --cor-texto-secundario: rgba(255, 255, 255, 0.726);
 }
 
 body{
@@ -157,9 +157,9 @@ span{
 
     /*Fim dos icons do lado esquerdo e do lado esquerdo.*/
 
-#form{
-    background-color: white;
-
+#formulario{
+    background-color: var(--cor-card);
+    color: var(--cor-texto);
     flex: 5;
     flex-direction: column;
 
@@ -171,16 +171,35 @@ span{
     text-align: center;
 }
 
+#titulo p{
+    color: var(--cor-texto-secundario);
+}
+
+#formulario label{
+    display: block;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-left: 16px;
+    margin-bottom: 8px;
+}
+
 .campo{
     position: relative;
 }
 
 .campo input{
     width: 90%;
+    box-sizing: border-box;
+
     margin-left: 15px;
     margin-right: 15px;
     padding: 12px 12px 8px 35px;
-    box-sizing: border-box;
+
+    color: var(--cor-texto-secundario);
+    background-color: var(--cor-input);
+
+    border: 1px solid var(--cor-borda);
+    border-radius: 5px;
 }
 
 .campo .icone{
