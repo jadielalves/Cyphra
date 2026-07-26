@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+:root{
+    --cor-dourado: #FFD700;
+    --cor-fundo: #050505;
+    --cor-card: #0E0E0E;
+    --cor-input: #111111;
+    --cor-borda: #2A2A2A;
+
+    --cor-texto: #FFFFFF;
+    --cor-texto-secundario: #8A8A8A;
+}
+
 body{
     background-color: blue;
     display: flex;
@@ -49,7 +60,7 @@ header img{
 }
 
 #login a{
-    color: #FFD700;
+    color: var(--cor-dourado);
     text-decoration: none;
     cursor: pointer;
 }
@@ -107,20 +118,6 @@ span{
     background-clip: text;
 }
 
-#form{
-    background-color: white;
-
-    flex: 5;
-    flex-direction: column;
-
-    width: 40%;
-    height: 100%;
-}
-
-#titulo{
-    text-align: center;
-}
-
     /*Icons do lado esquerdo.*/
 
 .icons{
@@ -159,3 +156,40 @@ span{
 }
 
     /*Fim dos icons do lado esquerdo e do lado esquerdo.*/
+
+#form{
+    background-color: white;
+
+    flex: 5;
+    flex-direction: column;
+
+    width: 40%;
+    height: 100%;
+}
+
+#titulo{
+    text-align: center;
+}
+
+.campo{
+    position: relative;
+}
+
+.campo input{
+    width: 90%;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 12px 12px 8px 35px;
+    box-sizing: border-box;
+}
+
+.campo .icone{
+    position: absolute;
+    top: 50%;
+    left: 22px;
+    transform: translateY(-50%);
+
+    font-size: 30px; 
+    color: var(--cor-dourado);
+    padding-bottom: 1px;
+}
