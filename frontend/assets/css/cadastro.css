@@ -10,13 +10,22 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+header{
+    
+}
+
+header img{
+    width: 200px;
+}
+
 #container{
     max-width: 900px;
-    height: 500px;
+    height: 550px;
     display: flex;
 }
 
 #image{
+    
     background: url(../images/background.jpeg);
     background-position: center;
     background-size: cover;
@@ -27,6 +36,18 @@ body{
     flex: 6;
 
     color: rgb(255, 255, 255);
+}
+
+#image h1{
+    scale: 0.85;
+    margin-left: 0px;
+}
+
+#subtitle{
+    scale: 0.9;
+    margin: 10px;
+    margin-top: 4px;
+    opacity: 0.726;
 }
 
 span{
@@ -46,17 +67,13 @@ span{
 
     width: 40%;
     height: 100%;
-
 }
 
 #titulo{
     text-align: center;
 }
 
-#subtitle{
-    margin-top: 15px;
-    opacity: 0.85;
-}
+
 
 .icons{
     margin: 10px;
@@ -64,11 +81,31 @@ span{
     align-items: center;
     
     background-color: black;
-    width: 35px;
+    max-width: 35px;
+    max-height: 35px;
     border-radius: 5px;
     box-shadow: inset 2px 2px 10px rgba(255, 255, 2, 0.219);
 }
 
+.icons h4{
+    white-space: nowrap;
+}
+
 .material-symbols-outlined{
     font-size: 34px;
+}
+
+.icons-descricao{
+    scale: 0.9;
+    margin-top: 10px;
+    display: flex;
+}
+
+.descricao{
+    margin-top: 10px;
+}
+
+.descricao p{
+    color: rgba(255, 255, 255, 0.726);
+    font-size: 15px;
 }
