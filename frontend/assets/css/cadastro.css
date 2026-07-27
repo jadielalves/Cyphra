@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+/*
+    Variáveis root
+*/
+
 :root{
     --cor-dourado: #FFD700;
     --cor-fundo: #050505;
@@ -10,6 +14,8 @@
     --cor-texto: #FFFFFF;
     --cor-texto-secundario: rgba(255, 255, 255, 0.726);
 }
+
+
 
 body{
     background-color: black;
@@ -166,6 +172,8 @@ span{
 
     /*Fim dos icons do lado esquerdo e do lado esquerdo.*/
 
+    /*Lado direito. Contém o formulário.*/
+
 #formulario{
     background-color: var(--cor-card);
     color: var(--cor-texto);
@@ -197,6 +205,8 @@ span{
     margin-left: 16px;
     margin-bottom: 8px;
 }
+
+    /*Configurações do input e ícones (SVGs).*/
 
 .campo{
     position: relative;
@@ -234,6 +244,10 @@ span{
     color: var(--cor-dourado);
     padding-bottom: 1px;
 }
+
+    /*Fim dos inputs.*/
+
+    /*Termos, políticas e botão check.*/
 
 #condicoes{
     margin-top: 20px;
@@ -292,6 +306,10 @@ span{
     color: var(--cor-dourado);
 }
 
+    /*Fim dos termos e botão check.*/
+
+    /*Botão criar conta.*/
+
 #criar{
     width: 90%;
     height: 50px;
@@ -317,3 +335,5 @@ span{
     box-shadow: 0 8px 20px rgba(255, 215, 0, 0.25);
     transition: 0.5s ease;
 }
+
+    /*Fim configurações lado direito.*/
