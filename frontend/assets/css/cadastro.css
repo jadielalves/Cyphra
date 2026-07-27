@@ -22,6 +22,10 @@ body{
     cursor: default;
 }
 
+main{
+    width: 900px;
+}
+
     /*
     Cabeçalho, parte onde fica a logo e botão de ir para a página de login.
     */
@@ -32,7 +36,7 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 814.183px;
+    width: 900px;
     height: 60px;
     border-bottom: 1px solid rgb(46, 46, 46);
 }
@@ -218,3 +222,85 @@ span{
     padding-bottom: 1px;
 }
 
+#condicoes{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#termos{
+    appearance: none;
+    -webkit-appearance: none;
+
+    display: grid;
+    place-items: center;
+
+    background-color: var(--cor-input);
+
+    width: 18px;
+    height: 18px;
+
+    border: 2px solid var(--cor-borda);
+    border-radius: 5px;
+
+    cursor: pointer;
+    margin-right: 9px;
+}
+
+#termos:checked{
+    background-color: var(--cor-dourado);
+    transition: .5s ease-in-out;
+}
+
+#termos::before{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    transform: scale(0);
+    transition: transform .15s ease-in-out;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    background: var(--cor-input);
+}
+
+#termos:checked::before{
+    transform: scale(1);
+}
+
+#condicoes p{
+    font-size: 12px;
+    color: var(--cor-texto-secundario);
+}
+
+#condicoes p a{
+    text-decoration: none;
+    color: var(--cor-dourado);
+}
+
+#criar{
+    width: 90%;
+    height: 50px;
+    
+    text-align: center;
+
+    margin-left: 15px;
+    margin-right: 15px;
+
+    color: var(--cor-input);
+    font-weight: 600;
+    background-color: var(--cor-dourado);
+
+    border-radius: 10px;
+    border: none;
+
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+#criar:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.25);
+    transition: 0.5s ease;
+}
