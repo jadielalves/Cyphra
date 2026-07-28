@@ -31,11 +31,12 @@ body{
 #container-principal{
     border: 1px solid var(--cor-borda);
     border-radius: 10px;
+    width: 100%;
+    max-width: 1000px;
 }
 
 main{
     width: 100%;
-    max-width: 900px;
 }
 
     /*
@@ -49,7 +50,7 @@ header{
     align-items: center;
     justify-content: space-between;
     
-    width: 900px;
+    width: 100%;
     height: 60px;
     border-bottom: 1px solid rgb(46, 46, 46);
 }
@@ -91,7 +92,7 @@ header img{
     */
 
 #container{
-    max-width: 900px;
+    width: 100%;
     height: 550px;
     display: flex;
 }
@@ -101,7 +102,6 @@ header img{
     */
 
 #image{
-    
     background: url(../images/background.jpeg);
     background-position: center;
     background-size: cover;
@@ -346,34 +346,3 @@ span{
             RESPONSIVIDADE
     ========================== */
 
-@media (max-width: 1024px){
-    #image{
-        flex: 5;
-    }
-
-    #image h1{
-        scale: 0.8;
-        margin-left: -15px;
-    }
-
-    #image p{
-        scale: 0.85;
-        margin-left: -15px;
-    }
-
-    #image #subtitle{
-        margin-left: 0px;
-    }
-
-    #formulario{
-        flex: 6;
-    }
-}
-
-@media (max-width: 768px){
-
-}
-
-@media (max-width: 480px){
-
-}
