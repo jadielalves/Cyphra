@@ -26,6 +26,7 @@ body{
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     cursor: default;
+    padding: 20px;
 }
 
 #container-principal{
@@ -346,3 +347,6 @@ span{
             RESPONSIVIDADE
     ========================== */
 
+@media (max-width: 1024px){
+    
+}
