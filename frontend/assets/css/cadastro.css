@@ -34,7 +34,8 @@ body{
 }
 
 main{
-    width: 900px;
+    width: 100%;
+    max-width: 900px;
 }
 
     /*
@@ -47,6 +48,7 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    
     width: 900px;
     height: 60px;
     border-bottom: 1px solid rgb(46, 46, 46);
@@ -82,7 +84,7 @@ header img{
 
     /*
     Fim do cabeçalho.
-    /*
+    */
 
     /*
     Container principal. Contém o lado esquerdo e o direito.
@@ -240,7 +242,6 @@ span{
     left: 22px;
     transform: translateY(-50%);
 
-    font-size: 30px; 
     color: var(--cor-dourado);
     padding-bottom: 1px;
 }
@@ -337,3 +338,5 @@ span{
 }
 
     /*Fim configurações lado direito.*/
+
+    
