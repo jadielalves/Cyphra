@@ -337,6 +337,39 @@ span{
     transition: 0.5s ease;
 }
 
+
     /*Fim configurações lado direito.*/
 
-    
+
+
+    /* ==========================
+            RESPONSIVIDADE
+    ========================== */
+
+@media (max-width: 1024px){
+    #image{
+        flex: 4;
+    }
+
+    #image h1{
+        scale: 0.8;
+        margin-left: -15px;
+    }
+
+    #image p{
+        scale: 0.85;
+        margin-left: -15px;
+    }
+
+    #image #subtitle{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 768px){
+
+}
+
+@media (max-width: 480px){
+
+}
