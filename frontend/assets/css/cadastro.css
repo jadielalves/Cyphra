@@ -370,4 +370,9 @@ span{
         flex: 6;
     }
 }
+
+@media (max-width: 768px){
+    .icons-descricao{
+        display: none;
+    }
 }
