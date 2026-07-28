@@ -348,5 +348,26 @@ span{
     ========================== */
 
 @media (max-width: 1024px){
-    
+    #image{
+        flex: 5;
+    }
+
+    #image h1{
+        scale: 0.8;
+        margin-left: -15px;
+    }
+
+    #image p{
+        scale: 0.85;
+        margin-left: -15px;
+    }
+
+    #image #subtitle{
+        margin-left: 0px;
+    }
+
+    #formulario{
+        flex: 6;
+    }
+}
 }
