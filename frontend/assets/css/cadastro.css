@@ -348,7 +348,7 @@ span{
             RESPONSIVIDADE
     ========================== */
 
-@media (max-width: 1024px){
+@media (max-width: 1024px){ /*Desktop*/
     #image{
         flex: 5;
     }
@@ -372,7 +372,7 @@ span{
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px){ /*Tablet*/
     .icons-descricao{
         display: none;
     }
@@ -397,7 +397,7 @@ span{
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px){ /*Celulares*/
     header{
         display: grid;
         align-items: center;
@@ -438,7 +438,7 @@ span{
     }
 }
 
-@media (max-width:288px){
+@media (max-width:288px){ /*Celulares pequenos*/
 
     #logo{
         scale: 0.8;
