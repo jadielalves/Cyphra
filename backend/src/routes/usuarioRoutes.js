@@ -1,11 +1,11 @@
 const express = require("express");
 
-const { listarUsuarios } = require("../controllers/usuarioController");
+const { listarUsuarios,cadastrarUsuario } = require("../controllers/usuarioController");
 
-const roteador = express.Router();
+const router = express.Router();
 
-roteador.get("/", (req, res) => {
-    res.send("Routes conectada");
-});
+router.get("/", listarUsuarios);
 
-module.exports = roteador;
+router.post("/",cadastrarUsuario);
+
+module.exports = router;

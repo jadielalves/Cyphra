@@ -1,16 +1,16 @@
-const express = require("express");
+const express = require('express')
 const usuarioRoutes = require("./routes/usuarioRoutes");
 
-const obj = express();
+const app = express();
 
-obj.use(express.json());
+app.use(express.json());
 
-obj.get("/", (req, res) => {
+app.get("/", (req, res) => {
     res.send("API conectada");
 })
 
-obj.use("/usuarios", usuarioRoutes);
+app.use("/usuarios", usuarioRoutes);
 
-obj.listen(3000, () => {
+app.listen(3000, () => {
     console.log(`Servidor rodando em http://localhost:${3000}`);
 })
