@@ -1,3 +1,6 @@
+
+import { createError, removeError } from "./utils.js"
+
 const form = document.getElementById('form')
 
 
@@ -11,7 +14,4 @@ form.addEventListener("submit", (event) => {
 
     // VALIDAÇÃO
 
-    if (name === ''){
-        
-    }
 })
