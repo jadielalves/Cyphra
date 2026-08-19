@@ -1,9 +1,21 @@
 const inputName = document.getElementById('name')
 const inputEmail = document.getElementById('email')
 const inputPassword = document.getElementById('password')
+const form = document.getElementById('formulario')
 
-import { registerUser } from "./api.js"
+const user = {
+    name: inputName.value,
+    email: inputEmail.value,
+    password: inputPassword.value
+}
 
-const response = await registerUser(user)
+import { registerUser } from "api.js"
 
-console.log(response)
+async function register() {
+    const response = await registerUser(user)
+}
+
+form.addEventListener("submit", function(event) {
+        event.preventDefault()
+        register()
+    })
