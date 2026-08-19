@@ -204,10 +204,12 @@ span {
 
 .campo {
   position: relative;
+  height: 42px;
 }
 
 .campo input {
   width: 90%;
+  height: 100%;
   box-sizing: border-box;
 
   margin-left: 15px;
@@ -236,6 +238,12 @@ span {
 
   color: var(--cor-dourado);
   padding-bottom: 1px;
+}
+
+.error{
+  color: red;
+  font-size: 12px;
+  margin-left: 15px;
 }
 
 /*Fim dos inputs.*/
